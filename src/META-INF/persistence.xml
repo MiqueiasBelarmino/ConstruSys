@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="db_tcc_miqueiasPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entidade.Usuario</class>
+    <class>entidade.Cliente</class>
+    <class>entidade.Fornecedor</class>
+    <class>entidade.Despesa</class>
+    <class>entidade.Produto</class>
+    <class>entidade.Grupo</class>
+    <class>entidade.ItemVenda</class>
+    <class>entidade.Venda</class>
+    <class>entidade.DespesaVariavel</class>
+    <class>entidade.Pagamento</class>
+    <class>entidade.Unidade</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/db_tcc_miqueias"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="ifsp"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
